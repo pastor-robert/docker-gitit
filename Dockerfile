@@ -1,6 +1,9 @@
-FROM ubuntu:xenial
-MAINTAINER Fabian Köster <fabian.koester@bringnow.com>
+FROM debian:bullseye-slim
+MAINTAINER Rob Adams <rob@rob-adams.us>
 
+# Usage: docker run -e LANG=C.UTF-8 -e GIT_USER_EMAIL=wiki@example.com -e GIT_USER_NAME=wiki -e TZ=America/Chicago -t -p 80:5001 -v $PWD/data:/data -v $PWD/ssmtp:/etc/ssmtp pastorrob/gitit
+
+# Based on https://github.com/bringnow/docker-gitit
 # Based on https://github.com/Hyzual/docker-gitit
 
 # Update package list
